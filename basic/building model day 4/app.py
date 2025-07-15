@@ -130,7 +130,7 @@ if 'canvas_result' in locals() and canvas_result.image_data is not None:
 
 # --- 9. Test Samples Section ---
 with st.sidebar:
-    st.header("🧪 Test Samples")
+    st.header(" Test Samples")
     sample_digit = st.selectbox("Try a training sample:", range(10))
     if st.button("Load Sample"):
         sample_idx = np.where(digits.target == sample_digit)[0][0]
@@ -143,4 +143,4 @@ with st.sidebar:
         st.write(f"Model Prediction: **{pred}**")
         
         if pred != sample_digit:
-            st.error("⚠️ Model misclassified this training sample!")
+            st.error(" Model misclassified this training sample!")
